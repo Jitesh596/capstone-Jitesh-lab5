@@ -1,0 +1,186 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f9fc;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:white;
+}
+
+header input{
+  width:300px;
+  padding:8px;
+  border-radius:20px;
+  border:1px solid #ddd;
+}
+
+.logo{
+  color:#2563eb;
+}
+
+.buttons button{
+  padding:8px 15px;
+  border:none;
+  margin-left:10px;
+  border-radius:20px;
+}
+
+.login{
+  background:#e0e7ff;
+}
+
+.signup{
+  background:#2563eb;
+  color:white;
+}
+
+.hero{
+  text-align:center;
+  padding:60px 20px;
+  background:#eaf3ff;
+}
+
+.hero-search{
+  margin-top:20px;
+}
+
+.hero input{
+  padding:10px;
+  width:250px;
+}
+
+.hero button{
+  padding:10px 20px;
+  background:#2563eb;
+  color:white;
+  border:none;
+}
+
+.categories{
+  padding:40px;
+}
+
+.category-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap:15px;
+}
+
+.cat{
+  background:white;
+  padding:20px;
+  text-align:center;
+  border-radius:10px;
+}
+
+.cat:hover{
+    transform: translateY(-4px);
+    transition: 0.2s;
+}
+
+.courses{
+  padding:40px;
+}
+
+.course-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.course-card{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+}
+
+.course-card img{
+  width:100%;
+  border-radius:10px;
+}
+
+.instructors{
+  background:#eaf3ff;
+  padding:40px;
+}
+
+.instructor-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+}
+
+.instructor-card{
+  background:white;
+  padding:15px;
+  text-align:center;
+  border-radius:10px;
+}
+
+.instructor-card img{
+  width:70px;
+  border-radius:50%;
+}
+
+.reviews{
+  padding:40px;
+}
+
+.review-grid{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.review-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  flex:1;
+}
+
+.newsletter{
+  background:#eaf3ff;
+  text-align:center;
+  padding:40px;
+}
+
+.newsletter input{
+  padding:10px;
+}
+
+.newsletter button{
+  padding:10px 20px;
+  background:#2563eb;
+  color:white;
+  border:none;
+}
+
+footer{
+  background:#111;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  padding:30px;
+}
+
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  footer{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .review-grid{
+    flex-direction:column;
+  }
+}
